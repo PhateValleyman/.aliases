@@ -46,6 +46,32 @@ This creates a `.aliases` file in the current directory with a commented out ali
 #   unit_test: '[ true = true ]'                        # optional - A bash command that tells whether the alias is doing what you want
 #   quiet: false                                        # optional - default 'false', when set to false evaluated command is printed to stderr before running
 ```
+########## ########## ##########
+..:
+  command: "cd .."
+...:
+  command: ".. && .."
+....:
+  command: "... && .."
+.....:
+  command: ".... && .."
+......:
+  command: "..... && .."
+########## ########## ##########
+ls: 
+  command: "ls -1Ah --group-directories-first --color=always"
+lst: 
+  command: "ls -1Ac --color=always"
+lsd: 
+  command: "du -cksh * | sort -hr | head -n 15"
+########## ########## ##########
+cp
+  command: "cp -r -v"
+mv:
+  command: "mv -f -v"
+rm:
+  command: "yes | rm -R -r -v"
+########## ########## ##########
 
 Edit the file and then run `aliases rehash` to make the alias available.
 
