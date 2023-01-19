@@ -10,3 +10,29 @@
 #  backout_seconds: 3                                  # optional
 #  unit_test: '[ true = true ]'                        # optional
 #  quiet: false                                        # optional
+########## ########## ##########
+..:
+  command: "cd .."
+...:
+  command: ".. && .."
+....:
+  command: "... && .."
+.....:
+  command: ".... && .."
+......:
+  command: "..... && .."
+########## ########## ##########
+ls: 
+  command: "ls -1Ah --group-directories-first --color=always"
+lst: 
+  command: "ls -1Ac --color=always"
+lsd: 
+  command: "du -cksh * | sort -hr | head -n 15"
+########## ########## ##########
+cp
+  command: "cp -r -v"
+mv:
+  command: "mv -f -v"
+rm:
+  command: "yes | rm -R -r -v"
+########## ########## ##########

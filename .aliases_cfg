@@ -1,1 +1,1 @@
-{"shim_directory":"${HOME}/dot-aliases/.aliases.d/shims","alias_directories":["/data/data/com.termux/files/home/dot-aliases"],"users":["PhateValleyman","default"],"disabled_users":[]}
+{"shim_directory":"${HOME}/.aliases/.aliases.d/shims","alias_directories":["/data/data/com.termux/files/home/.aliases"],"users":["PhateValleyman","default"],"disabled_users":[]}
